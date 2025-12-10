@@ -335,6 +335,48 @@ footer {
   width: 100%;
 }
 
+/* ФИЛЬТРЫ ДЛЯ КАРТИНОК */
+
+.filter-brightness {
+  filter: brightness(120%);
+}
+
+.filter-contrast {
+  filter: contrast(150%);
+}
+
+.filter-saturate {
+  filter: saturate(200%);
+}
+
+.filter-grayscale {
+  filter: grayscale(80%);
+}
+
+.filter-sepia {
+  filter: sepia(60%);
+}
+
+.filter-hue-rotate {
+  filter: hue-rotate(90deg);
+}
+
+.filter-invert {
+  filter: invert(20%);
+}
+
+.filter-blur {
+  filter: blur(2px);
+}
+
+.filter-drop-shadow {
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.filter-multiple {
+  filter: brightness(110%) contrast(120%) saturate(130%);
+}
+
 /* МЕДИАЗАПРОС ДЛЯ МОБИЛЬНЫХ */
 
 @media (width <= 375px) {
