@@ -7,7 +7,7 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-weight:  var(--font-weight-normal);
+  font-variation-settings: "wght" var(--font-weight-normal);
 }
 
 /* ШАПКА */
@@ -54,7 +54,7 @@ main {
   margin-bottom: 50px;
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
-  font-weight: var(--font-weight-normal);
+  font-variation-settings: "wght" var(--font-weight-normal);
 }
 
 .article:last-of-type {
@@ -65,7 +65,7 @@ main {
   padding: 3px 10px;
   font-family: var(--main-font);
   font-size: 18px;
-  font-weight: var(--font-weight-bold);
+  font-variation-settings: "wght" var(--font-weight-bold);
 }
 
 .card__image-container {
@@ -141,34 +141,6 @@ main {
 
 /* КНОПКИ */
 
-.button {
-  position: relative;
-  border: 2px solid var(--accent-color);
-  font-family: var(--accent-font);
-  background-color: var(--background-color);
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: var(--accent-color);
-  transition: transform 0.5s ease-in-out;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-
-.button:hover::before {
-  transform: scaleX(1);
-}
-
-.button:focus {
-  box-shadow: 2px 2px 0 var(--accent-color);
-  outline: none;
-}
-
 .card__icon-button {
   display: flex;
   justify-content: center;
@@ -201,7 +173,7 @@ main {
   font-size: 14px;
   line-height: 90%;
   background-color: var(--background-color);
-  transition: box-shadow var(--transition-speed) ease;
+  transition: box-shadow 0.3s ease;
   cursor: pointer;
 }
 
@@ -217,10 +189,7 @@ main {
 .standard-button::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background-color: var(--accent-color);
   transition: transform var(--transition-slow) ease-in-out;
   transform: scaleX(0);
@@ -325,11 +294,11 @@ footer {
 /* ФИЛЬТРЫ ДЛЯ КАРТИНОК */
 
 .filter-brightness {
-  filter: brightness(120%);
+  filter: brightness(175%);
 }
 
 .filter-contrast {
-  filter: contrast(150%);
+  filter: contrast(120%);
 }
 
 .filter-saturate {
@@ -341,27 +310,19 @@ footer {
 }
 
 .filter-sepia {
-  filter: sepia(60%);
+  filter: sepia(100%);
 }
 
 .filter-hue-rotate {
-  filter: hue-rotate(90deg);
+  filter: hue-rotate(270deg);
 }
 
-.filter-invert {
-  filter: invert(20%);
-}
-
-.filter-blur {
-  filter: blur(2px);
-}
-
-.filter-drop-shadow {
-  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+.filter-opacity {
+  filter: opacity(50%)
 }
 
 .filter-multiple {
-  filter: brightness(110%) contrast(120%) saturate(130%);
+  filter: brightness(125%) contrast(275%) saturate(80%);
 }
 
 /* МЕДИАЗАПРОС ДЛЯ МОБИЛЬНЫХ */
