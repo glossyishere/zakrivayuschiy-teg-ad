@@ -297,12 +297,16 @@ footer {
   filter: brightness(175%);
 }
 
+.filter-saturate {
+  filter: saturate(200%);
+}
+
 .filter-contrast {
   filter: contrast(120%);
 }
 
-.filter-saturate {
-  filter: saturate(200%);
+.filter-hue-rotate {
+  filter: hue-rotate(270deg);
 }
 
 .filter-grayscale {
@@ -311,10 +315,6 @@ footer {
 
 .filter-sepia {
   filter: sepia(100%);
-}
-
-.filter-hue-rotate {
-  filter: hue-rotate(270deg);
 }
 
 .filter-opacity {
