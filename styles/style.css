@@ -85,12 +85,12 @@ main {
 
 .card__image-text {
   position: absolute;
-  inset-block-start: 25px;
-  inset-inline-end: 25px;
   z-index: 1;
   font-family: var(--accent-font);
   font-size: 14px;
   text-transform: uppercase;
+  inset-block-start: 25px;
+  inset-inline-end: 25px;
   mix-blend-mode: hard-light;
 }
 
@@ -160,7 +160,6 @@ main {
 
 .card__icon-button:focus-visible {
   border-color: var(--accent-color);
-  transition: border-color 0.3s ease;
 }
 
 .standard-button {
@@ -173,7 +172,7 @@ main {
   font-size: 14px;
   line-height: 90%;
   background-color: var(--background-color);
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow var(--transition-speed) ease;
   cursor: pointer;
 }
 
@@ -183,7 +182,6 @@ main {
 
 .standard-button:focus-visible {
   box-shadow: 2px 2px 0 var(--accent-color);
-  transition: box-shadow 0.3s ease;
 }
 
 .standard-button::before {
@@ -216,7 +214,7 @@ main {
   display: block;
   margin-block-end: 1px;
   fill: var(--button-text-color);
-  transition: color 1s ease;
+  transition: fill 1s ease;
   block-size: 21px;
   inline-size: 21px;
   mix-blend-mode: difference;
@@ -241,9 +239,9 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  min-width: 339px;
   margin: 0 auto;
   padding: 15px 20px;
+  min-inline-size: 339px;
 }
 
 /* ДИАЛОГОВОЕ ОКНО */
@@ -318,7 +316,7 @@ footer {
 }
 
 .filter-opacity {
-  filter: opacity(50%)
+  filter: opacity(50%);
 }
 
 .filter-multiple {
@@ -342,10 +340,6 @@ footer {
   .floppy {
     block-size: 28px;
     inline-size: 28px;
-  }
-
-  .header {
-    padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vi, 8.5rem);
   }
 
   .dialog__content {
